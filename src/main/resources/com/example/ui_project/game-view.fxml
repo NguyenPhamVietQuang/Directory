@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:controller="com.example.ui_project.GameController" id="AnchorPane" maxHeight="-Infinity"
+            maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+    <children>
+        <VBox layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <Label fx:id="titleGameTxt" alignment="CENTER" prefHeight="50.0" prefWidth="600.0" text="Question 1/5" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="18.0" fx:id="x1"/>
+                    </font>
+                </Label>
+                <Label fx:id="titleQuestionTxt"
+                        alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="600.0"
+                       text="They _ going to the movies tonight" textAlignment="CENTER"
+                       wrapText="true">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <HBox prefHeight="200.0" prefWidth="600.0">
+                    <VBox prefHeight="200.0" prefWidth="300.0">
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                            <padding>
+                                <Insets left="50.0" fx:id="x4"/>
+                            </padding>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                            <RadioButton fx:id="answerABtn" font="$x1"
+                                         mnemonicParsing="false"
+                                         text="A.">
+                                <HBox.margin>
+                                    <Insets right="10.0" fx:id="x2"/>
+                                </HBox.margin>
+                            </RadioButton>
+                            <Label fx:id="answerATxt" text="Is">
+                                <font>
+                                    <Font size="16.0" fx:id="x3"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" padding="$x4" prefHeight="100.0" prefWidth="200.0">
+                            <RadioButton font="$x1" mnemonicParsing="false" text="C." HBox.margin="$x2"
+                                         fx:id="answerCBtn"/>
+                            <Label fx:id="answerCTxt" font="$x3" text="Is"/>
+                        </HBox>
+                    </VBox>
+                    <VBox prefHeight="200.0" prefWidth="300.0">
+                        <HBox alignment="CENTER_LEFT" padding="$x4" prefHeight="100.0" prefWidth="200.0">
+                            <RadioButton font="$x1" mnemonicParsing="false" text="B." HBox.margin="$x2"
+                                         fx:id="answerBBtn"/>
+                            <Label fx:id="answerBTxt" font="$x3" text="Is"/>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" padding="$x4" prefHeight="100.0" prefWidth="200.0">
+                            <RadioButton fx:id="answerDBtn" font="$x1" mnemonicParsing="false" text="D."
+                                         HBox.margin="$x2"
+                            />
+                            <Label fx:id="answerDTxt" font="$x3" text="Is"/>
+                        </HBox>
+                    </VBox>
+                </HBox>
+                <VBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0">
+                    <Button fx:id="btnSubmit" mnemonicParsing="false" prefHeight="37.0" prefWidth="169.0"
+                            text="Next"
+                            textAlignment="CENTER">
+                        <font>
+                            <Font name="System Bold" size="14.0"/>
+                        </font>
+                    </Button>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
